@@ -11,8 +11,7 @@ int main()
 		cout<<"Introduza a primeira nota: ";
 		cin>>n1;
 		if(n1<0||n1>20)
-			cout<<"nota introduzida errada"<<endl;
-			
+			cout<<"nota introduzida errada"<<endl;		
 	}while(n1<0||n1>20);
 	
 	do
@@ -38,9 +37,18 @@ int main()
 		if(n4<0||n4>20)
 			cout<<"nota introduzida errada"<<endl;
 	}while(n4<0||n4>20);
-
+	
+	media=(n1+n2+n3+n4)/4;
+		
+	cout<<"Media das notas: "<<media<<endl;
+	
+	n1=n1*0.5;
+	n2=n2*0.1;
+	n3=n3*0.1;
+	n4=n4*0.3;
+	
 	media=(n1+n2+n3+n4)/4;
 	
-	cout<<"Media das notas: "<<media;
+	cout<<"Media ponderada: "<<media<<endl;
 	
 }
